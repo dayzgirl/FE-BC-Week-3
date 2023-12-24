@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+<!--Linked Bootstrap here at the top before the Header-->   
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     
     <title>Week 3 Bootstrap Project</title>
     
 </head>
 <div>
-<!--This is the Navbar. Since this is the homepage for the website, the company name/logo links to Home-index.html-->
+
+<!--This is the Navbar. Since this is the homepage for the website, the company name/logo links to Home-index.html 
+    This is included in all pages-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Company Logo and Name</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
 <!--The links for the navbar begin here-->      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -26,6 +29,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
               </a>
+<!--These dropdown options should all link to their own pages. I linked them to the construction page purposefully.-->
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="construction.html">USA Religious Holidays</a>
                 <div class="dropdown-divider"></div>
@@ -40,10 +44,11 @@
           </ul>
         </div>
       </nav>
+
 <!--Header of the Page-->
     <h1 class="text-center">United States Public Holidays and Why We Celebrate Them</h1>
 
-<!--Table required for project-->
+<!--Table required for project with a hover function-->
     <div class="row justify-content-center">
         <div class="col-auto">
             <table class="table table-bordered table-striped table-hover table-responsive">
@@ -99,7 +104,7 @@
         </div>
     </div>
 
-<!--Grid section-->
+<!--Grid section. Added images with text where it would normally be a photo of the holiday for times' sake.-->
 <div class="container">
     <div class="row">
         <!-- First Column -->
@@ -173,6 +178,7 @@
                 labore et dolore magna aliqua.</p>
         </div>
     </div>
+<!--Added script to run jquery and to use the bootstrap bundle-->
 </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
